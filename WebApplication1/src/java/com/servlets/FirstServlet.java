@@ -27,7 +27,9 @@ public class FirstServlet implements Servlet{
     {
         System.out.println("Processing...");
         resp.setContentType("txt/html");
-        PrintWriter out = resp.getWriter();
+        PrintWriter out = resp.getWriter(); //PrintWriter class is used to write the response content to the client's browser. The PrintWriter class is a 
+                                            //character-oriented output stream in Java that is particularly useful for writing text data, such as HTML, to 
+                                            //an output destination, such as the HTTP response stream.
         out.println("<h1>This is output from first servlet</h1>");
         out.println("<h2>Today's date and current time is "+ new Date().toString() + "</h2>");
     }
