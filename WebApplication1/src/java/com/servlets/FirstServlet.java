@@ -14,7 +14,7 @@ import java.util.*;
 public class FirstServlet implements Servlet{
     
     ServletConfig conf;
-    
+    // Servlet Interface has total five methods...need to override all of them
     //Life cycle methods
     @Override
     public void init(ServletConfig conf)
@@ -23,7 +23,7 @@ public class FirstServlet implements Servlet{
         System.out.println("Creating object...");
     }
     @Override
-    public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException
+    public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException // Provide service like taking request and giving response
     {
         System.out.println("Processing...");
         resp.setContentType("txt/html");
