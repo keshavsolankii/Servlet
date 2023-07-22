@@ -7,8 +7,8 @@
     
     <!--Servlet declaration-->
     <servlet>
-        <servlet-name>First</servlet-name>
-        <servlet-class>com.servlets.FirstServlet</servlet-class>
+        <servlet-name>First</servlet-name> <!--This sub-element of <servlet> defines a name for the servlet. The name must be unique within the web application context.-->
+        <servlet-class>com.servlets.FirstServlet</servlet-class> <!-- Specifies the java class that specifies the servlet logic-->
     </servlet>
     
     <servlet>
@@ -17,9 +17,10 @@
     </servlet>
     
     <!--Mapping-->
-    <servlet-mapping>
+    <servlet-mapping> <!--This element is used to map a servlet to a URL pattern, defining the URL at which the servlet can be accessed by clients.-->
         <servlet-name>First</servlet-name>
-        <url-pattern>/web</url-pattern>
+        <url-pattern>/web</url-pattern> <!-- This sub-element of <servlet-mapping> specifies the URL pattern that maps to the servlet.
+	    				When a client requests a URL that matches this pattern, the corresponding servlet is invoked to handle the request.-->
     </servlet-mapping>
     
     <servlet-mapping>

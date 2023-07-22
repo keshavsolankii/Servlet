@@ -2,21 +2,26 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.servlets;
+package com.practice;
 import javax.servlet.*;
 import java.io.*;
+import javax.servlet.http.*;
+
 
 /**
  *
  * @author HP
  */
-public class SecondServlet extends GenericServlet{
+public class DoPost extends HttpServlet{
     @Override
-    public void service(ServletRequest req, ServletResponse resp) throws IOException, ServletException
+    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException
     {
-        System.out.println("This is Generic servlet!");
+        System.out.println("This is post method...");
+        
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
-        out.println("<h1>This is my first generic servlet!</h1>");
+        
+        out.print("<h2> This is servlet which takes POST requests</h2>");  
+        out.flush();
     }
 }

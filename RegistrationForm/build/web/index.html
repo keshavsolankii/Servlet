@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <style>
+            .container{
+                border: 1px solid black;
+                font-size: 20px;
+                width: 400px;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><h1>Fill in the form</h1></div>
+        <form action="openform" method="post" class="container">
+        <table>
+            <tr>
+                <td>Enter your name : </td>
+                <td><input type="text" name="name" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Enter your password : </td>
+                <td><input type="password" name="pass" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td>Enter your email : </td>
+                <td><input type="email" name="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Select your gender : </td>
+                <td><input type="radio" name="gender" value="male">Male &nbsp; &nbsp; <input type="radio" name="gender" value="female">Female</td>
+            </tr>
+            <tr>
+                <td>Please check the box : </td>
+                <td><input type="checkbox" name="condtions" value="checked"></td>
+            </tr>
+            <tr>
+                <td>Select the course : </td>
+                <td>
+                    <select name="course">
+                        <option value="Java">Java</option>
+                        <option value="Python">Python</option>
+                    </select>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>  
+        </form>
+    </body>
+</html>
