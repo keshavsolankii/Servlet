@@ -11,10 +11,20 @@
         <servlet-class>com.servlets.FirstServlet</servlet-class>
     </servlet>
     
+    <servlet>
+        <servlet-name>Second</servlet-name>
+        <servlet-class>com.servlets.SecondServlet</servlet-class>
+    </servlet>
+    
     <!--Mapping-->
     <servlet-mapping>
         <servlet-name>First</servlet-name>
         <url-pattern>/web</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Second</servlet-name>
+        <url-pattern>/sec</url-pattern>
     </servlet-mapping>
     
     <session-config>

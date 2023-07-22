@@ -26,7 +26,7 @@ public class FirstServlet implements Servlet{
     public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException
     {
         System.out.println("Processing...");
-        resp.setContentType("txt/html");
+        resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
         out.println("<h1>This is output from first servlet</h1>");
         out.println("<h2>Today's date and current time is "+ new Date().toString() + "</h2>");
